@@ -1,69 +1,40 @@
-/**
+.smallText a { font-size:9px; text-decoration:underline; }
 
- * @copyright Copyright 2003-2006 Zen Cart Development Team
- * @copyright Portions Copyright 2003 osCommerce
- * @license http://www.zen-cart.com/license/2_0.txt GNU Public License V2.0
- * @version $Id: edit_orders.css 5454 2006-12-29 20:10:17Z drbyte $
- */
+.eo-button { background-color: #f3e5ab; padding: 0.3em 0.6em; border: 0.1em solid black; border-radius: 0.3em; cursor: pointer; margin-top: 1em; }
+.eo-button a { text-decoration: none; color: black; }
+.eo-label { vertical-align: top; font-weight: bold; }
+.eo-spacer { height: 1.5em; }
+.eo-right { text-align: right; }
+.eo-center { text-align: center; }
+.eo-left { text-align: left; }
+.eo-top { vertical-align: top; }
+.eo-top-left { vertical-align: top; text-align: left; }
+.eo-top-right { vertical-align: top; text-align: right; }
+.eo-wrap { padding: 0.3em 0; }
 
-td.ot-custom-Amount {
-}
+#eo-main { padding: 0.5em; }
 
-td.ot-custom-Text {
-font-weight:bold;
-}
+#eo-nav { text-align: center; }
+#eo-nav > div { display: inline-block; vertical-align: middle; }
+#eo-nav input { width: 6em; margin-top: 0.3em; }
 
-.smallText a{
-font-size:9px;
-text-decoration:underline;
-}
+#eo-hdr { padding: 0 1em; }
+#eo-hdr div:first-child { float: left; font-size: large; font-weight: bold; font-variant: small-caps; }
+#eo-hdr div:last-child { float: right; }
+#eo-hdr::after { clear: both; }
 
-.button, input.button, input.cssButtonHover {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px;
-	border-radius:30px;
-	/*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffd3f7), color-stop(1, #fe8cd2) );
-	background:-moz-linear-gradient( center top, #ffd3f7 5%, #fe8cd2 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#E8E8E8', endColorstr='#fe8cd2');*/
-	display:inline-block;
-	font-family:Verdana, Helvetica, Tahoma, Arial, sans-serif;
-	font-size:12px;
-	font-weight:bold;
-	margin: 0;
-	padding:2px 8px;
-	text-decoration:none;
-}
-input.submit_button {
-	background-color:#E8E8E8;  /* Submit button background color */
-	border: 1px solid #B7B7B7;  /* Submit button border color */
-	font-size: 12px;
-	font-weight: bold;
-	display: inline-block;
-	margin: 0;
-	padding:2px 8px;
-	color: #333;  /* Text color for submit buttons */
-}
-input.submit_button:hover, input.cssButtonHover {
-	background-color:#cdd1d4;  /* Hover color for the submit buttons */
-	border: 1px solid #E8E8E8;  /* Submit button border color */
-	color:#333;  /* Text color for the submit buttons */
-	cursor: pointer;
-}
-input.normal_button {
-	background-color:#E8E8E8;  /* Link button background color */
-	border: 1px solid #B7B7B7;  /* Link button border color */
-	color:#333;  /* Text color for link-related buttons */
-}
-input.normal_button:hover {
-	background-color:#cdd1d4;  /* Hover color for link-related buttons */
-}
-input.normal_button:active, span.submit_button:active, span.submit_button:active input {
-	position:relative;
-	top:1px;
-}
-input.amount {
-text-align: right;
-}
+#eo-addr { width: 100%; }
+#eo-addr input { width: 35em; }
+
+#eo-info .eo-wrap > div { float: left; }
+#eo-info .eo-wrap > div:first-child { width: 15em; font-weight: bold; }
+#eo-info .eo-wrap, #eo-info::after, #eo-info .eo-wrap > div:last-child::after { clear: both; }
+
+#eo-prods, #eo-totals { width: 100%; }
+
+#eo-stats, #eo-stats td { border: 1px solid #444; border-collapse: collapse; }
+#eo-stats td { padding: 0.3em; }
+
+#eo-notify .eo-wrap > div { float: left; }
+#eo-notify .eo-wrap > div:first-child { width: 15em; font-weight: bold; }
+#eo-notify .eo-wrap, #eo-notify::after, #eo-notify .eo-wrap > div:last-child::after { clear: both; }
